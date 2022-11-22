@@ -1,0 +1,10 @@
+.blogr {
+  margin: 0 auto;
+  width: 375px;
+}
+
+@media screen and (min-width: 800px) {
+  .blogr {
+    width: 100%;
+  }
+}

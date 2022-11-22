@@ -1,0 +1,115 @@
+.designedSection {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 6rem;
+  overflow: hidden;
+}
+
+.designedSection h1 {
+  color: #1f415c;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: center;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content .images {
+  background: url("../images/illustration-editor-mobile.svg");
+  background-size: 406px 331px;
+  background-repeat: no-repeat;
+  background-position: -15px 0px;
+  width: 406px;
+  height: 331px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox h2 {
+  color: #1f415c;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  margin-top: 2.8rem;
+  text-align: center;
+  width: 60%;
+}
+
+.textBox p {
+  color: #1f415c;
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+  margin-top: 0.7rem;
+  text-align: center;
+  width: 85%;
+}
+
+@media screen and (min-width: 800px) {
+  .designedSection {
+    display: flex;
+    align-items: center;
+    margin-top: 3.4rem;
+  }
+
+  .designedSection h1 {
+    font-size: 2.5rem;
+    margin-top: 6rem;
+  }
+
+  .content {
+    flex-direction: row;
+    margin-top: 3rem;
+    width: 1150px;
+  }
+
+  .images {
+    position: relative;
+  }
+  .content .images {
+    background: url("../images/illustration-editor-desktop.svg");
+    background-repeat: no-repeat;
+    height: 882px;
+    width: 925px;
+    margin-left: 150px;
+    padding-top: 190px;
+    margin-top: -190px;
+    padding-right: 500px;
+    margin-right: -500px;
+  }
+
+  .textContent {
+    width: 44.5%;
+  }
+
+  .textBox h2 {
+    text-align: left;
+    width: 100%;
+  }
+
+  .textBox p {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .textBox:last-of-type h2 {
+    margin-top: 6rem;
+  }
+
+  .textBox p:first-of-type {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,290 @@
+/* font-family: 'Overpass', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+
+/* MOBILE */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  position: relative;
+  padding: 1.1rem 1.5rem;
+  width: 100%;
+}
+
+.header {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.logo {
+  align-self: center;
+  width: 80px;
+}
+
+.hamburgerMenu {
+  cursor: pointer;
+}
+
+.closeMenu {
+  align-self: center;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul a {
+  color: hsl(237, 23%, 32%);
+}
+
+.navGroup {
+  /* Menu Block */
+  display: none;
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 324px; /* width of menu */
+}
+
+.menuOpen {
+  display: block;
+  z-index: 2;
+}
+
+.topLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topLevel > li {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.topLevel > li:hover {
+  text-decoration: underline;
+}
+
+.topLevel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.topLevel svg {
+  margin-left: 0.6rem;
+}
+
+.topLevel svg path {
+  stroke: #000;
+}
+
+ul img path {
+  stroke: black;
+}
+
+.secondLevel {
+  background: #efeff1;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 90%;
+  padding: 1.1rem;
+  width: 100%;
+}
+
+.secondLevel > li:not(:last-of-type) {
+  margin-bottom: 1.1rem;
+}
+
+.secondLevel li a {
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.secondLevel > li > a:hover {
+  font-weight: 600;
+}
+
+hr {
+  background: #efeff1;
+  border: 1px solid #efeff1;
+  margin-top: -1rem;
+  margin-bottom: 1.8rem;
+  width: 100%;
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navButtons button {
+  border: none;
+  cursor: pointer;
+}
+
+.loginBTN {
+  background: none;
+}
+
+.signUpBTN {
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  color: #fff;
+  border-radius: 50px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem 2.5rem;
+}
+
+.signUpBTN:hover {
+  /* color: #dc5866; */
+  background: rgba(220, 88, 102, 0.75);
+  color: #fff;
+}
+
+/************** DESKTOP **************/
+@media screen and (min-width: 800px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    margin-top: 1rem;
+    width: 1160px;
+  }
+  .header {
+    align-self: center;
+    margin-top: 0;
+    width: 200px;
+  }
+
+  .logo {
+    align-self: center;
+    margin: 0;
+    width: 110px;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  .navGroup {
+    align-self: center;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0;
+    position: static;
+    transform: translate(0, 0);
+    width: 1140px;
+  }
+
+  ul a {
+    color: #fff;
+  }
+
+  ul ul a {
+    color: hsl(237, 23%, 32%);
+  }
+
+  .topLevel {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .topLevel > li {
+    margin: 0;
+    margin-right: 1.8rem;
+    width: 100%;
+  }
+
+  .topLevel a {
+    justify-content: flex-start;
+  }
+
+  .topLevel svg path {
+    stroke: #fff;
+  }
+
+  /* .topLevel li:last-of-type a svg {
+    border: 1px solid red;
+  } */
+
+  .arrowRotate {
+    transform: rotate(180deg);
+  }
+
+  .secondLevel {
+    display: none;
+    align-self: center;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: -2.2rem;
+    top: 2rem;
+    width: 10rem;
+  }
+
+  .secondLevelOpen {
+    display: block;
+  }
+
+  .secondLevel li a {
+    font-size: 1rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .navButtons {
+    flex-direction: row;
+  }
+
+  .loginBTN {
+    color: #fff;
+    margin-right: 1.7rem;
+  }
+
+  .signUpBTN {
+    background: #fff;
+    color: #dc5866;
+  }
+  .signUpBTN:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+  }
+}

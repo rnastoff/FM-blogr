@@ -1,0 +1,38 @@
+/* MOBILE */
+
+.footerSection {
+  background: #24242c;
+  border-top-right-radius: 6rem;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 4.3rem;
+}
+
+.footerGroup {
+  margin-top: 1.5rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 800px) {
+  .footerSection {
+    height: 22.5rem;
+  }
+
+  .footerInner {
+    display: flex;
+    width: 1110px;
+  }
+
+  .footerGroup {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 180px;
+    width: 670px;
+  }
+}

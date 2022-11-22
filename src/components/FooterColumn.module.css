@@ -1,0 +1,38 @@
+.footerColumn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footerColumn h3 {
+  color: #fff;
+  margin-bottom: 1.4rem;
+}
+
+.footerColumn a {
+  color: #c9c9d1;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+}
+
+.footerColumn > a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  .footerColumn {
+    text-align: left;
+  }
+
+  .footerColumn h3 {
+    font-size: 1rem;
+  }
+
+  .footerColumn a {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+}

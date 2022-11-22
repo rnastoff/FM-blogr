@@ -1,0 +1,110 @@
+/* circles on .stateOfTheArt css */
+/* phones in their own div css */
+/* 925px width for desktop */
+
+/* MOBILE */
+
+.stateOfTheArt {
+  background-color: #373854;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-size: 570px 570px;
+  background-position: -100px -200px;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  height: 39rem;
+  margin-top: 17rem;
+  margin-bottom: 5rem;
+  position: relative;
+  max-width: 100%;
+}
+
+.stateOfTheArt .image {
+  /* background-image: url("../images/illustration-phones.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 180px;
+  margin-top: -180px;
+  height: 100%;
+  width: 100%;
+  position: absolute; */
+  position: absolute;
+  top: -180px;
+}
+
+.stateOfTheArt .textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: 13.7rem;
+}
+
+.stateOfTheArt h2 {
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.stateOfTheArt p {
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  .stateOfTheArt {
+    display: flex;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-size: 950px 950px;
+    background-position: -100px -300px;
+    height: 25.3rem;
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .stateOfTheArt picture {
+    width: 552px;
+  }
+
+  .stateOfTheArt .image {
+    /* background-size: 560px;
+    height: 530px;
+    position: static;
+    margin-left: 120px;
+    padding-top: 0;
+    margin-top: -70px; */
+    position: static;
+    margin-top: -70px;
+    margin-left: 130px;
+    width: 20%;
+    min-width: 552px;
+  }
+
+  .stateOfTheArt .textBox {
+    display: flex;
+    align-items: flex-start;
+    position: static;
+    margin-top: 8rem;
+    margin-left: 3.2rem;
+    width: 600px;
+    min-width: 600px;
+  }
+
+  .stateOfTheArt h2 {
+    text-align: left;
+    width: 100%;
+  }
+
+  .stateOfTheArt p {
+    text-align: left;
+    width: 90%;
+  }
+}

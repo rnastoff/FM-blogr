@@ -1,0 +1,88 @@
+.freeSection {
+  margin-top: 6.5rem;
+  width: 100%;
+}
+
+.image {
+  /* background-image: url("../images/illustration-laptop-mobile.svg");
+  background-size: 498px 359px;
+  background-position: -65px 0px;
+  background-repeat: no-repeat;
+  height: 359px;
+  width: 498px; */
+}
+
+.image picture {
+  transform: scale(1.32, 1.32);
+}
+
+.textBoxGroup {
+  margin-top: 5.2rem;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox h2 {
+  color: #1f415c;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+.textBox p {
+  color: #1f415c;
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+  margin-top: 1.4rem;
+  margin-bottom: 2.7rem;
+  text-align: center;
+  width: 83%;
+}
+
+@media screen and (min-width: 800px) {
+  .freeSection {
+    display: flex;
+  }
+
+  .image {
+    /* background-image: url("../images/illustration-laptop-desktop.svg");
+    background-size: 974px 786px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 974px;
+    width: 786px; */
+    /* border: 1px solid red; */
+    min-height: 786px;
+    min-width: 974px;
+  }
+
+  .image picture {
+    transform: scale(1, 1);
+    margin-left: -280px;
+  }
+
+  .textBoxGroup {
+    margin-top: 190px;
+    margin-left: -250px;
+  }
+
+  .textBox {
+    align-items: flex-start;
+    width: 600px;
+  }
+
+  .textBox h2 {
+    text-align: left;
+  }
+
+  .textBox p {
+    text-align: left;
+    width: 500px;
+  }
+}
